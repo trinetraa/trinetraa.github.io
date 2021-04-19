@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+ <header>
+    <title>Sharanya's Projects</title>
+	<link rel="stylesheet" href="master.css">
+    <link rel="FaviconIcon" href="images/person-icon.png" type="image/x-icon">
+    <link rel="shortcut" href ="images/person-icon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="name" content="Sharanya Srivastava">
+	<!--above meta tag will help to be indexed by search engines and people may find this page when they search for the word "Sharanya Srivastava"-->	
+	<!--Code to create two columns content in the page -->
+	<style>
+    * {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+p.padding {
+        margin-left: 7em;
+	    margin-right: 7em;
+	  }
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">		
+ </header>
+ <body>
+    <img src ="images/top-logo.gif" style="border-radius: 50%; width:15em; height:15em" alt="lappy-flowers">
+
+    <h1>Projects</h1> 
+	<h2><b>ICT Training for Hindi Students</b></h2>
+	<p id="project-duration"><b style="color:#696969">Mar'21 - Present</b></p>
+	<p class="padding">Leading a team of 3 to create and execute an interactive module for basic ICT training of students of Hindi Hons in Kalindi College to help them navigate better in online academics</p>
+	    
+	<h2><b>Placement Portal - Kalindi College</b></h2>
+	<p><b style="color:#696969">Dec'20 - Apr'21</b></p>
+	<p class="padding">Worked in a team of 4 to design a placement portal for Kalindi's official website. Project currently awaiting approval of authorities to go live.<br><br>
+    <b>Module/Tools:</b> WordPress, PHP, MySQL, JavaScript</p>	
+	<a href="http://placement-portal.42web.io/" target="_blank"><b>View Project</b></a><br><br>
+	
+     <!-- Slideshow container -->
+     <div class="slideshow-container">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img src="images/placement-portal-gallery/1.jpg" style="width:60%">
+        <div class="text">Home Page</div>
+	    <div class="numbertext">1 / 9</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/placement-portal-gallery/2.jpg" style="width:60%">
+        <div class="text">Student Login</div>
+	    <div class="numbertext">2 / 9</div>
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/placement-portal-gallery/3.jpg" style="width:60%">
+        <div class="text">Student Registration</div>
+	    <div class="numbertext">3 / 9</div>
+      </div>
+	
+	  <div class="mySlides fade">
+        <img src="images/placement-portal-gallery/4.jpg" style="width:60%">
+        <div class="text">Recruiter Login</div>
+	    <div class="numbertext">4 / 9</div>
+      </div>
+	
+	  <div class="mySlides fade">
+        <img src="images/placement-portal-gallery/5.jpg" style="width:60%">
+        <div class="text">Password Encrypted Recruiter Registration Access </div>
+        <div class="numbertext">5 / 9</div>
+	  </div>
+	
+	  <div class="mySlides fade">
+        <img src="images/placement-portal-gallery/6.jpg" style="width:60%">
+        <div class="text">Recruiter Registration</div>
+	    <div class="numbertext">6 / 9</div>
+      </div>
+	
+	  <div class="mySlides fade">
+        <img src="images/placement-portal-gallery/7.jpg" style="width:60%">
+        <div class="text">Student Profile Page</div>
+	    <div class="numbertext">7 / 9</div>
+      </div>
+	
+	  <div class="mySlides fade">
+        <img src="images/placement-portal-gallery/8.jpg" style="width:60%">
+        <div class="text">Upload Resumee Form</div>
+	    <div class="numbertext">8 / 9</div>
+      </div>
+	
+	  <div class="mySlides fade">
+        <img src="images/placement-portal-gallery/9.jpg" style="width:60%">
+        <div class="text">Filter Search Resumes</div>
+	    <div class="numbertext">9 / 9</div>
+      </div>
+ 
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+     <br>
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+	  <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+	  <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+    </div>
+
+	<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 4000); // Change image every 2 seconds
+      }
+    </script>
+  
+ 	<h2><b>Website - Shree Vidya Shakti<b></h2>
+	<p><b style="color:#696969">Dec'20 - Jan'21</b></p>
+	<p class="padding">Designed and Developed a website for a coaching institute.<br><br>
+    <b>Module/Tools:</b> WordPress, PHP, MySQL</p>
+	<a href="svs-demo.html" target="_blank"><b>View Project</b></a><br><br>	
+  
+ </body>
+ 
+ <footer>
+
+    <hr>
+    <code style="color:#f53163">Copyright © | 2021 Sharanya Srivastava</code>    
+ </footer>
+</html>
+
